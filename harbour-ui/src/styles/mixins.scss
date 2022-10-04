@@ -1,0 +1,5 @@
+@mixin text-body() {
+  font-size: var(--hs-text-m-font-size);
+  font-weight: var(--hs-text-body-font-weight);
+  font-family: var(--hs-font-family-primary);
+}
