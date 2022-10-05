@@ -28,6 +28,12 @@
   font-family: var(--hs-font-family-primary);
 }
 
+@mixin text-header4() {
+  font-size: var(--hs-text-s-font-size);
+  font-weight: var(--hs-text-title-font-weight);
+  font-family: var(--hs-font-family-primary);
+}
+
 @mixin text-accent-header1() {
   @include text-header1;
   color: var(--hs-color-accent-primary);

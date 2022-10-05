@@ -43,12 +43,10 @@ export class FAQStore {
   }
 
   setFilter(filter: string | null) {
-    console.log(this)
     this.filter = filter
   }
 
   setOpened(index: number, value: boolean) {
-    console.log(this)
     this.items[index].opened = value
   }
 

@@ -35,6 +35,10 @@
 
   &-CardText {
     @include text-header3;
+
+    &_large {
+      font-size: var(--hs-text-l-font-size);
+    }
   }
 
   &-FirstCard {

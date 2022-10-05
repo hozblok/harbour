@@ -1,10 +1,20 @@
+@import '../../styles/mixins.scss';
+
 .Footer {
   display: flex;
   justify-content: space-between;
-  padding: 0 2em;
+  padding: 1em 2em;
   border: 1px solid var(--hs-color-text-secondary);
 
   &_mobile {
     display: none;
+  }
+
+  &-Title {
+    @include text-header4
+  }
+
+  &-Content {
+    @include text-header3
   }
 }

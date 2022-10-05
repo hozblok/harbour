@@ -40,9 +40,9 @@ class App extends Component {
           <Header />
         </header>
         <div>
-          <InteractionDesign />
-          <CarouselContainer initialIndex={1} />
-          <FAQ store={App.faqStore} />
+          <div className="App-Block"><InteractionDesign /></div>
+          <div className="App-Block"><CarouselContainer initialIndex={1} /></div>
+          <div className="App-Block"><FAQ store={App.faqStore} /></div>
         </div>
         <footer>
           <Footer />

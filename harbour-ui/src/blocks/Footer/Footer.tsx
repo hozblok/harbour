@@ -14,28 +14,28 @@ export default function Footer() {
   return (
     <div className={block({ mobile })}>
       <div>
-        <p>Zeptolab</p>
-        <p>Marketing Performance</p>
+        <div className={block('Title')}>Zeptolab</div>
+        <div className={block('Content')}>Marketing Performance</div>
       </div>
       <div>
-        <p>Location</p>
-        <p>Bangkok</p>
+        <div className={block('Title')}>Location</div>
+        <div className={block('Content')}>Bangkok</div>
       </div>
       <div>
-        <p>Duration</p>
-        <p>1 Year Full-Time</p>
+        <div className={block('Title')}>Duration</div>
+        <div className={block('Content')}>1 Year Full-Time</div>
       </div>
       <div>
-        <p>Start Date</p>
-        <p>3 Aug 2020</p>
+        <div className={block('Title')}>Start Date</div>
+        <div className={block('Content')}>3 Aug 2020</div>
       </div>
       <div>
-        <p>Application Deadline</p>
-        <p>30 June 2020</p>
+        <div className={block('Title')}>Application Deadline</div>
+        <div className={block('Content')}>30 June 2020</div>
       </div>
       <div>
-        <p>Application closes in</p>
-        <p>6 Day : 22 hours : 56 Min</p>
+        <div className={block('Title')}>Application closes in</div>
+        <div className={block('Content')}>6 Day : 22 hours : 56 Min</div>
       </div>
     </div>
   )

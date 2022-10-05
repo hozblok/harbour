@@ -33,7 +33,7 @@ export function DetailedInfo() {
       <div>
         <Card className={block('FirstCard')}>
           <div className={block('CardSubTitle')}>Application closes in</div>
-          <div className={block('CardText')}>
+          <div className={block('CardText', {large: true})}>
             6 Day : 22 Hrs : 56 Min : 13 Seg
           </div>
         </Card>
