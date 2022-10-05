@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'Apercu Pro';
+  src: url('../assets/fonts/apercu.eot'); /* IE9*/
+  src: url('../assets/fonts/apercu.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */ url('../assets/fonts/apercu.woff2') format('woff2'),
+    /* chrome、firefox */ url('../assets/fonts/apercu.woff') format('woff'),
+    /* chrome、firefox */ url('../assets/fonts/apercu.ttf') format('truetype'),
+    /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+      url('../assets/fonts/apercu.svg#Apercu Pro') format('svg'); /* iOS 4.1- */
+}

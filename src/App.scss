@@ -1,0 +1,9 @@
+.App {
+  min-height: 100%;
+  display: grid;
+  // sticky footer
+  grid-template-rows: auto 1fr auto;
+  &-Block {
+    margin: 2em 0;
+  }
+}

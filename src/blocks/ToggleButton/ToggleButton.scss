@@ -1,0 +1,55 @@
+@import '../../styles/mixins';
+
+.ToggleButton {
+  &_mode_closed {
+    .ToggleButton-vertical {
+      transition: all 0.5s ease-in-out;
+      transform: rotate(-270deg);
+    }
+    .ToggleButton-horizontal {
+      transition: all 0.5s ease-in-out;
+      transform: rotate(-270deg);
+      opacity: 1;
+    }
+  }
+
+  &_mode_opened {
+    opacity: 1;
+    .ToggleButton-vertical {
+      transition: all 0.5s ease-in-out;
+      transform: rotate(270deg);
+    }
+    .ToggleButton-horizontal {
+      transition: all 0.5s ease-in-out;
+      transform: rotate(270deg);
+      opacity: 0;
+    }
+  }
+  & > .ToggleButton-circle {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    border: solid 1px var(--hs-color-text-secondary);
+    & > .ToggleButton-horizontal {
+      position: absolute;
+      background-color: var(--hs-color-accent-primary);
+      width: 10px;
+      height: 2px;
+      left: 50%;
+      margin-left: -5px;
+      top: 50%;
+      margin-top: -1px;
+    }
+    & > .ToggleButton-vertical {
+      position: absolute;
+      background-color: var(--hs-color-accent-primary);
+      width: 2px;
+      height: 10px;
+      left: 50%;
+      margin-left: -1px;
+      top: 50%;
+      margin-top: -5px;
+    }
+  }
+}

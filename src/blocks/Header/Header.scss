@@ -1,0 +1,21 @@
+.Header {
+  background: var(--hs-color-accent-primary);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 2em 0px 2em;
+  user-select: none;
+
+  &-Logo {
+    color: var(--hs-color-background);
+    text-align: center;
+  }
+
+  &-BurgerButtonContainer {
+    padding: 12px 16px;
+  }
+
+  &-Subtitle {
+  }
+}
