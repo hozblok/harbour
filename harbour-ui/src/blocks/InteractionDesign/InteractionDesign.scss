@@ -1,0 +1,10 @@
+.InteractionDesign {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 4em;
+  gap: 2em;
+
+  &-OneColumn {
+    margin: 1em;
+  }
+}

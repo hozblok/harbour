@@ -1,0 +1,35 @@
+@import '../../../styles/mixins.scss';
+
+.ApplyBlock {
+  &-Title {
+    @include text-body-l;
+    color: var(--hs-color-text-primary);
+    font-weight: var(--hs-text-title-font-weight);
+  }
+
+  &-MainContent {
+    @include text-body-l;
+    color: var(--hs-color-text-primary);
+  }
+
+  &-FooterText {
+    @include text-body-l;
+    color: var(--hs-color-text-primary);
+  }
+
+  &-FooterButton {
+    background-color: var(--hs-color-accent-primary);
+    font-weight: var(--hs-text-header-font-weight);
+    border-radius: 29px;
+    width: 166px;
+    height: 58px;
+    border: none;
+    cursor: pointer;
+  }
+
+  &-FooterButtonText {
+    font-size: var(--hs-text-s-font-size);
+    color: #ffffff;
+    text-align: center;
+  }
+}

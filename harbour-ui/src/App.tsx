@@ -5,6 +5,7 @@ import { Component, ContextType } from 'react'
 import CarouselContainer from './blocks/CarouselContainer/CarouselContainer'
 import Footer from './blocks/Footer/Footer'
 import Header from './blocks/Header/Header'
+import InteractionDesign from './blocks/InteractionDesign/InteractionDesign'
 import ToggleButton from './blocks/ToggleButton/ToggleButton'
 import { MobileContext } from './providers/mobile/MobileContext'
 import MobileProvider from './providers/mobile/MobileProvider'
@@ -44,6 +45,7 @@ class App extends Component {
             }}
             mode="closed"
           />
+          <InteractionDesign />
           <CarouselContainer initialIndex={1} />
         </div>
         <footer>

@@ -3,3 +3,42 @@
   font-weight: var(--hs-text-body-font-weight);
   font-family: var(--hs-font-family-primary);
 }
+
+@mixin text-body-l() {
+  font-size: var(--hs-text-l-font-size);
+  font-weight: var(--hs-text-body-font-weight);
+  font-family: var(--hs-font-family-primary);
+}
+
+@mixin text-header1() {
+  font-size: var(--hs-text-header-font-size);
+  font-weight: var(--hs-text-header-font-weight);
+  font-family: var(--hs-font-family-primary);
+}
+
+@mixin text-header2() {
+  font-size: var(--hs-text-m-font-size);
+  font-weight: var(--hs-text-header-font-weight);
+  font-family: var(--hs-font-family-primary);
+}
+
+@mixin text-header3() {
+  font-size: var(--hs-text-s-font-size);
+  font-weight: var(--hs-text-header-font-weight);
+  font-family: var(--hs-font-family-primary);
+}
+
+@mixin text-accent-header1() {
+  @include text-header1;
+  color: var(--hs-color-accent-primary);
+}
+
+@mixin text-accent-header2() {
+  @include text-header2;
+  color: var(--hs-color-accent-primary);
+}
+
+@mixin text-accent-header3() {
+  @include text-header3;
+  color: var(--hs-color-accent-primary);
+}

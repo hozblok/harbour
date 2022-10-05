@@ -7,14 +7,15 @@
 
   --hs-font-family-primary: 'Apercu Pro', Arial, Helvetica, sans-serif;
 
-  --hs-text-header-font-size: 34px;
-  --hs-text-l-font-size: 22px;
-  --hs-text-m-font-size: 16px;
+  --hs-text-header-font-size: 30px;
+  --hs-text-l-font-size: 20px;
+  --hs-text-m-font-size: 18px;
   --hs-text-s-font-size: 14px;
+  --hs-text-xs-font-size: 12px;
 
-  --hs-text-header-font-weight: 600;
+  --hs-text-header-font-weight: 500;
   --hs-text-title-font-weight: 600;
-  --hs-text-body-font-weight: 400;
+  --hs-text-body-font-weight: 300;
 
   font-family: var(--hs-font-family-primary);
   font-size: var(--hs-text-m-font-size);

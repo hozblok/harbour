@@ -1,0 +1,50 @@
+@import '../../../styles/mixins.scss';
+
+.DetailedInfo {
+  width: max-content;
+
+  &_mobile {
+    width: auto;
+  }
+
+  &-ZeptolabImg {
+    width: auto;
+    height: 80px;
+  }
+
+  &-PoweredBy {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  &-PoweredByText {
+    padding-top: 0.5em;
+    opacity: 0.5;
+    font-size: var(--hs-text-xs-font-size);
+  }
+
+  &-PoweredByName {
+    margin-top: 0.5em;
+    font-size: var(--hs-text-m-font-size);
+  }
+
+  &-CardSubTitle {
+    @include text-accent-header3;
+  }
+
+  &-CardText {
+    @include text-header3;
+  }
+
+  &-FirstCard {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+  }
+
+  &-SecondCard {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

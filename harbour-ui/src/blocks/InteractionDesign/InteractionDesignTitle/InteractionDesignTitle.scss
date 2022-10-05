@@ -1,0 +1,22 @@
+@import '../../../styles/mixins.scss';
+
+.InteractionDesignTitle {
+  max-width: 440px;
+
+  &-Text {
+    @include text-accent-header1;
+  }
+
+  &-ImgContainer {
+    position: relative;
+  }
+
+  &-Img {
+    position: absolute;
+    left: 150px;
+    top: -70px;
+    height: 206px;
+    transform: rotate(6deg);
+    z-index: -1;
+  }
+}
