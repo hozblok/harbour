@@ -1,8 +1,12 @@
 .App {
-  text-align: center;
+  min-height: 100%;
+  display: grid;
+  // sticky footer
+  grid-template-rows: auto 1fr auto;
 }
 
-.App-logo {
+
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -35,4 +39,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */

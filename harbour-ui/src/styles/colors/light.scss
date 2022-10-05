@@ -1,8 +1,9 @@
 @mixin hs-colors-light {
-    --hs-color-background: #FFFFFF;
+  --hs-color-background: #ffffff;
+  --hs-color-background-secondary: #e5e5e5;
 
-    --hs-color-text-primary: #535353;
-    --hs-color-text-secondary: #DADADA;
+  --hs-color-text-primary: #535353;
+  --hs-color-text-secondary: #dadada;
 
-    --hs-color-accent-primary: #685DC5;
+  --hs-color-accent-primary: #685dc5;
 }
