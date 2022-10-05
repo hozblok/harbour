@@ -3,10 +3,11 @@ import './App.scss'
 import { Component, ContextType } from 'react'
 
 import CarouselContainer from './blocks/CarouselContainer/CarouselContainer'
+import FAQ from './blocks/FAQ/FAQ'
+import { FAQStore } from './blocks/FAQ/FAQStore'
 import Footer from './blocks/Footer/Footer'
 import Header from './blocks/Header/Header'
 import InteractionDesign from './blocks/InteractionDesign/InteractionDesign'
-import ToggleButton from './blocks/ToggleButton/ToggleButton'
 import { MobileContext } from './providers/mobile/MobileContext'
 import MobileProvider from './providers/mobile/MobileProvider'
 
@@ -14,7 +15,7 @@ const MIN_DESKTOP_RESOLUTION = 769
 
 class App extends Component {
   static contextType = MobileContext
-  // declare context: ContextType<typeof MobileContext>
+  static faqStore = new FAQStore()
 
   get mobileContext() {
     return this.context as ContextType<typeof MobileContext>
@@ -39,14 +40,9 @@ class App extends Component {
           <Header />
         </header>
         <div>
-          <ToggleButton
-            onToggle={() => {
-              console.log('click')
-            }}
-            mode="closed"
-          />
           <InteractionDesign />
           <CarouselContainer initialIndex={1} />
+          <FAQ store={App.faqStore} />
         </div>
         <footer>
           <Footer />

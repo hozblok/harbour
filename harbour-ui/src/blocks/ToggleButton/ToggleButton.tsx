@@ -7,19 +7,20 @@ import { cn } from '@bem-react/classname'
 const block = cn('ToggleButton')
 
 export interface IToggleButton {
-  onToggle: () => void
-  mode: 'closed' | 'opened'
+  onToggle: (mode: 'closed' | 'opened') => void
+  startMode: 'closed' | 'opened'
 }
 
 export default function ToggleButton(props: IToggleButton) {
-  const [mode, setMode] = useState(props.mode)
+  const [mode, setMode] = useState(props.startMode)
   return (
     <>
       <div
         className={block({ mode })}
         onClick={() => {
-          setMode(mode === 'closed' ? 'opened' : 'closed')
-          props.onToggle()
+          const newMode = mode === 'closed' ? 'opened' : 'closed'
+          setMode(newMode)
+          props.onToggle(newMode)
         }}
       >
         <div className="ToggleButton-circle">

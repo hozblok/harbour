@@ -1,0 +1,43 @@
+@import '../../styles/mixins.scss';
+
+.FAQ {
+    margin: 1em;
+
+    &-Title {
+        @include text-accent-header1
+    }
+
+    &-Header {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+
+    &-Filter {
+        display: grid;
+        grid-template-columns: 1fr 250px;
+        align-items: baseline;
+    }
+
+    &-ElementHeader {
+        display: grid;
+        grid-template-columns: 200px 1fr 50px;
+    }
+
+    &-ElementType {
+        @include text-accent-header2
+    }
+
+    &-ElementQuestion {
+        @include text-header2
+    }
+
+    &-ElementAnswer {
+        @include text-header3
+    }
+
+    &-ElementAnswerHeader {
+        display: grid;
+        grid-template-columns: 200px 1fr 50px;
+    }
+}
