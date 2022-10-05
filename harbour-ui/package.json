@@ -22,6 +22,7 @@
     "@testing-library/user-event": "^12.0.0",
     "@types/jest": "^27.5.2",
     "@types/node": "^16.11.64",
+    "jest-mock-axios": "^4.7.0-beta",
     "react-scripts": "5.0.1",
     "sass": "^1.55.0",
     "typescript": "^4.8.4"
