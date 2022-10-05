@@ -1,0 +1,10 @@
+.Footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2em;
+  border: 1px solid var(--hs-color-text-secondary);
+
+  &_mobile {
+    display: none;
+  }
+}
