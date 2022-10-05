@@ -1,5 +1,6 @@
 import { Component, ContextType } from 'react'
 import './App.scss'
+import CarouselCard from './blocks/CarouselCard/CarouselCard'
 
 import Footer from './blocks/Footer/Footer'
 import Header from './blocks/Header/Header'
@@ -42,6 +43,7 @@ class App extends Component {
             }}
             mode="closed"
           />
+          <CarouselCard />
         </div>
         <footer>
           <Footer />

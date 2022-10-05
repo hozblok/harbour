@@ -1,0 +1,39 @@
+.CarouselCard {
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  gap: 2em;
+  border: 1px solid var(--hs-color-text-secondary);
+  padding: 2em;
+  box-sizing: border-box;
+
+  &-Header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-Person {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+  }
+
+  &-Person img {
+    border-radius: 100%;
+  }
+
+  &-ContentContainer {
+    padding: 0 2em;
+  }
+
+  &-Content {
+    margin-bottom: 2em;
+    display: flex;
+    align-items: center;
+    color: var(--hs-color-content);
+  }
+
+  &-ContentFooter {
+    color: var(--hs-color-text-primary);
+  }
+}
