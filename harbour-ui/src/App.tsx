@@ -1,7 +1,8 @@
-import { Component, ContextType } from 'react'
 import './App.scss'
-import CarouselCard from './blocks/CarouselCard/CarouselCard'
 
+import { Component, ContextType } from 'react'
+
+import CarouselContainer from './blocks/CarouselContainer/CarouselContainer'
 import Footer from './blocks/Footer/Footer'
 import Header from './blocks/Header/Header'
 import ToggleButton from './blocks/ToggleButton/ToggleButton'
@@ -43,7 +44,7 @@ class App extends Component {
             }}
             mode="closed"
           />
-          <CarouselCard />
+          <CarouselContainer initialIndex={1} />
         </div>
         <footer>
           <Footer />
